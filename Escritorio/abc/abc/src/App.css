@@ -49,3 +49,13 @@ header .header-container {
   margin: 10px 0;
   align-items: center;
 }
+
+.boton {
+  color: white;
+  background-color: black;
+  position: relative;
+  margin-left: 10px;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}

@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Menu from './components/Menu';
 import './App.css';
 import ImagenTarjeta from './components/images/imagen1.jpg';
@@ -6,6 +7,7 @@ import Allever from './components/images/Allever.png';
 import Tarjeta from './components/Tarjeta';
 import Carta from './components/Carta';
 import Cart from './components/images/CartWidget';
+import Boton from './Button';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App2(){
       </ul>
       <h3>Dato asdkj</h3>
       <Tarjeta imgSrc={ImagenTarjeta} user="random"></Tarjeta>
+      <Boton/>
     </Carta>
 
     <Tarjeta imgSrc = {ImagenTarjeta2} user= "random2">
@@ -45,6 +48,13 @@ function UserGreeting(props) {
   return <h1>Bienvenido!</h1>;
 }
 
+function App3(){
+  return <form title="Hey!">
+    <Boton/>
+  </form>
+}
+
 export default App;
 export default App2;
+export default App3;
 export default UserGreeting;
